@@ -7,12 +7,13 @@ import java.io.Serializable;
  * @author chen
  */
 public class AnthortyInfo implements Serializable {
-
-  private Long anthortyId;
-  private Long anthortyPid;
-  private String anthortyName;
-  private String anthortyDesc;
-  private String anthortyUrl;
+  private static final long serialVersionUID = -7868086041825942504L;
+  
+  private Long anthortyId;            // [PK] 权限编号
+  private Long anthortyPid;           // [--] 权限菜单编号
+  private String anthortyName;        // [--] 权限名称
+  private String anthortyDesc;        // [--] 权限描述
+  private String anthortyUrl;         // [--] 权限 URL
 
 
   public Long getAnthortyId() {
