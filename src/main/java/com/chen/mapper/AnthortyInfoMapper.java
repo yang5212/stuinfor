@@ -9,6 +9,6 @@ import com.chen.entity.AnthortyInfo;
  * 权限信息
  *
  */
-public interface AnthortyInfoMapper  extends BaseMapper<AnthortyInfo>   {
+public interface AnthortyInfoMapper  extends BaseMapper<AnthortyInfo>      {
 
 }
