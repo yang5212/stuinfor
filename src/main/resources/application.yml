@@ -1,0 +1,47 @@
+spring: 
+  profiles:
+    active:
+    - chche
+    - redis
+
+# 文件上传大小限制
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+# 数据源/连接池
+  datasource:
+    url: jdbc:mysql://111.67.197.6:6033/stuinfor?character=utf-8
+    username: tom
+    password: 654321
+    type: com.alibaba.druid.pool.DruidDataSource
+
+# Mybatis
+mybatis:
+  type-aliases-package: com.chen.entity
+  mapper-locations: classpath:com/chen/mapper/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+---
+# Ehcache缓存
+spring:
+  cache:
+    ehcache:
+      config: ehcache.xml
+  profiles: chche
+
+# redis
+---
+spring: 
+  redis:
+    host: 111.67.193.85
+    port: 9736
+    password: 2459786062
+    jedis:
+      pool:
+        max-idle: 10
+        min-idle: 5
+  profiles: redis

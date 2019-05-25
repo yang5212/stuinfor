@@ -8,7 +8,8 @@ import java.sql.Timestamp;
  * @author chen
  */
 public class AuditionInfo implements Serializable {
-
+	
+  private static final long serialVersionUID = -3510815426242773291L;
   private Long auditionId;
   private Long studentId;
   private Timestamp auditionTime;

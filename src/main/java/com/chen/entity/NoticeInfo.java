@@ -8,7 +8,8 @@ import java.sql.Timestamp;
  * @author chen
  */
 public class NoticeInfo implements Serializable {
-
+	
+  private static final long serialVersionUID = 8103887254385771450L;
   private Long noticeId;
   private Long staffId;
   private String noticeTitle;

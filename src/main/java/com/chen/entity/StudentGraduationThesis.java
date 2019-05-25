@@ -1,6 +1,9 @@
 package com.sample;
 
-
+/**
+ * 
+ * @author chen
+ */
 public class StudentGraduationThesis {
 
   private long studentPaperId;

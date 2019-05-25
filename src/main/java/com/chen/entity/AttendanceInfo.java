@@ -8,17 +8,18 @@ import java.sql.Timestamp;
  * @author chen
  */
 public class AttendanceInfo implements Serializable {
-
-  private Long attendanceId;
-  private Long studentId;
-  private Long staffId;
-  private String attendanceDesc;
-  private String attendanceState;
-  private Timestamp attendanceTime;
-  private String attendanceRemark;
-  private String attendanceXuenian;
-  private String attendanceXueqi;
-  private String attendanceMonth;
+	
+  private static final long serialVersionUID = -1477394325704824610L;
+  private Long attendanceId;           // [--] 
+  private Long studentId;              // [--] 
+  private Long staffId;                // [--] 
+  private String attendanceDesc;       // [--] 
+  private String attendanceState;      // [--] 
+  private Timestamp attendanceTime;    // [--] 
+  private String attendanceRemark;     // [--] 
+  private String attendanceXuenian;    // [--] 
+  private String attendanceXueqi;      // [--] 
+  private String attendanceMonth;      // [--] 
 
 
   public Long getAttendanceId() {

@@ -1,4 +1,4 @@
-package com.sample;
+package com.chen.entity;
 
 
 public class StudentFamilyMember {
