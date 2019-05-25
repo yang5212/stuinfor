@@ -1,13 +1,19 @@
-package com.sample;
+package com.chen.entity;
 
+import java.io.Serializable;
+/**
+ * 文件上传表
+ * @author gjx
+ *
+ */
+public class UploadFile implements Serializable {
 
-public class UploadFile {
-
-  private long fileId;
-  private long staffId;
-  private String fileTitle;
-  private String fileName;
-  private java.sql.Timestamp fileTime;
+  private static final long serialVersionUID = 7835652937944126257L;
+  private long fileId;                  //[PK] 文件编号
+  private long staffId;                 //[FK] 员工编号
+  private String fileTitle;             //[--] 文件标题
+  private String fileName;              //[--] 主文件名
+  private java.sql.Timestamp fileTime;  //[--] 发布时间
 
 
   public long getFileId() {

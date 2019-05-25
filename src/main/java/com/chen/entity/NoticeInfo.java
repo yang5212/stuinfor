@@ -4,18 +4,18 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ *公告信息表
  * @author chen
  */
 public class NoticeInfo implements Serializable {
 	
   private static final long serialVersionUID = 8103887254385771450L;
-  private Long noticeId;
-  private Long staffId;
-  private String noticeTitle;
-  private String noticeContent;
-  private Timestamp noticeTime;
-  private String noticeFilename;
+  private Long noticeId;               //[PK] 公告编号
+  private Long staffId;                //[--] 员工编号
+  private String noticeTitle;          //[--] 公告标题
+  private String noticeContent;        //[--] 公告内容
+  private Timestamp noticeTime;        //[--] 发布时间
+  private String noticeFilename;       //[--]
 
 
   public Long getNoticeId() {

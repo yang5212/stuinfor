@@ -1,22 +1,25 @@
-package com.sample;
+package com.chen.entity;
+
+import java.io.Serializable;
 
 /**
- * 
+ * 毕业论文和科研训练表
  * @author chen
  */
-public class StudentGraduationThesis {
+public class StudentGraduationThesis implements Serializable {
 
-  private long studentPaperId;
-  private long studentId;
-  private long staffId;
-  private String paperTitle;
-  private String paperTeacher;
-  private String paperStart;
-  private java.sql.Timestamp paperTime;
-  private String paperScore;
-  private String paperComments;
-  private java.sql.Timestamp regTime;
-  private String paperNote;
+  private static final long serialVersionUID = 6840608804499497542L;
+  private long studentPaperId;            //[PK] 编号
+  private long studentId;                 //[FK] 学生编号
+  private long staffId;                   //[FK] 员工编号
+  private String paperTitle;              //[--] 论文标题
+  private String paperTeacher;            //[--] 论文指导老师
+  private String paperStart;              //[--] 乞讨时间
+  private java.sql.Timestamp paperTime;   //[--] 答辩时间
+  private String paperScore;              //[--] 成绩
+  private String paperComments;           //[--] 评语
+  private java.sql.Timestamp regTime;     //[--] 登记时间
+  private String paperNote;               //[--] 备注
 
 
   public long getStudentPaperId() {

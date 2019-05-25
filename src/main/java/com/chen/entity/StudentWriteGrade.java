@@ -1,19 +1,24 @@
-package com.sample;
+package com.chen.entity;
 
-
-public class StudentWriteGrade {
-
-  private long writeGradeId;
-  private long studentId;
-  private long staffId;
-  private long classId;
-  private long disciplineId;
-  private String writeGrade;
-  private java.sql.Timestamp writeGradeTime;
-  private String writeGradeNote;
-  private String writeGradeXuenian;
-  private String writeGradeXueqi;
-  private String writeGradeType;
+import java.io.Serializable;
+/**
+ * 学生成绩表
+ * @author gjx
+ *
+ */
+public class StudentWriteGrade implements Serializable {
+  private static final long serialVersionUID = 2827565883853179310L;
+  private long writeGradeId;                    // [PK] 编号
+  private long studentId;                       // [FK] 学生编号
+  private long staffId;                         // [FK] 员工编号
+  private long classId;                         // [FK] 班级编号
+  private long disciplineId;                    // [FK] 课程编号
+  private String writeGrade;                    // [--] 成绩
+  private java.sql.Timestamp writeGradeTime;    // [--] 登分日期
+  private String writeGradeNote;                // [--] 备注
+  private String writeGradeXuenian;             // [--] 学年
+  private String writeGradeXueqi;               // [--] 学期
+  private String writeGradeType;                // [--] 考试类型
 
 
   public long getWriteGradeId() {

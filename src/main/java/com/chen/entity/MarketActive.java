@@ -4,23 +4,24 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ *教务活动信息表
  * @author chen
  */
 public class MarketActive implements Serializable {
 
-  private Long activeId;
-  private Long staffId;
-  private String activeName;
-  private Long activeState;
-  private Timestamp activeStart;
-  private Timestamp activeEnd;
-  private Long activeType;
-  private Double activeCosteEmtimate;
-  private Double activeCoste;
-  private Long activeRefectEstimate;
-  private String activeStudent;
-  private String activeContent;
+  private static final long serialVersionUID = 5277215304836279659L;
+  private Long activeId;                //[PK] 编号
+  private Long staffId;                 //[FK] 员工编号
+  private String activeName;            //[--] 活动名称
+  private Long activeState;             //[--] 活动状态
+  private Timestamp activeStart;        //[--] 开始时间
+  private Timestamp activeEnd;          //[--] 结束时间
+  private Long activeType;              //[--] 活动类型
+  private Double activeCosteEmtimate;   //[--] 成本预算
+  private Double activeCoste;           //[--] 实际成本
+  private Long activeRefectEstimate;    //[--] 预期反应
+  private String activeStudent;         //[--] 预期人数
+  private String activeContent;         //[--] 活动描述
 
 
   public Long getActiveId() {

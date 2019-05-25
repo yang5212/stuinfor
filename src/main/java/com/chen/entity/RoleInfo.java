@@ -3,15 +3,16 @@ package com.chen.entity;
 import java.io.Serializable;
 
 /**
- *
+ *角色信息表
  * @author chen
  */
 public class RoleInfo implements Serializable {
 
-  private Long roleId;
-  private String roleName;
-  private String roleDesc;
-  private String roleState;
+  private static final long serialVersionUID = -7151778269279804488L;
+  private Long roleId;            //[PK] 角色编号
+  private String roleName;        //[--] 角色名称
+  private String roleDesc;        //[--] 角色描述
+  private String roleState;       //[--] 角色状态
 
 
   public Long getRoleId() {

@@ -1,19 +1,25 @@
-package com.sample;
+package com.chen.entity;
 
+import java.io.Serializable;
+/**
+ * 学生缴费信息表
+ * @author gjx
+ *
+ */
+public class StudentPayment implements Serializable {
 
-public class StudentPayment {
-
-  private long paymentId;
-  private long studentId;
-  private long staffId;
-  private String paymentSituation;
-  private long paymentMethod;
-  private java.sql.Timestamp paymentTime;
-  private double discountAmount;
-  private double shouldAmount;
-  private double realAmount;
-  private double debtAmount;
-  private String paymentRemark;
+  private static final long serialVersionUID = 7186261966456638745L;
+  private long paymentId;                 //[PK] 编号
+  private long studentId;                 //[FK] 学生编号
+  private long staffId;                   //[FK] 员工编号
+  private String paymentSituation;        //[--] 学年
+  private long paymentMethod;             //[--] 缴费方式
+  private java.sql.Timestamp paymentTime; //[--] 缴费时间
+  private double discountAmount;          //[--] 应交金额
+  private double shouldAmount;            //[--] 优惠金额
+  private double realAmount;              //[--] 实缴金额
+  private double debtAmount;              //[--] 欠款金额
+  private String paymentRemark;           //[--] 备注
 
 
   public long getPaymentId() {

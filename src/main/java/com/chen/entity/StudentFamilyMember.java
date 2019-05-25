@@ -1,18 +1,24 @@
 package com.chen.entity;
 
+import java.io.Serializable;
+/**
+ * 学生缴费信息表
+ * @author gjx
+ *
+ */
+public class StudentFamilyMember implements Serializable {
 
-public class StudentFamilyMember {
-
-  private long studentFamilyId;
-  private long studentId;
-  private long staffId;
-  private String familyName;
-  private String familyApp;
-  private long familyAge;
-  private String familyZcmm;
-  private String workplace;
-  private java.sql.Timestamp regTime;
-  private String familyNote;
+  private static final long serialVersionUID = 1844614591877275770L;
+  private long studentFamilyId;        //[PK] 编号
+  private long studentId;              //[FK] 学生编号
+  private long staffId;                //[FK] 员工编号
+  private String familyName;           //[--] 姓名
+  private String familyApp;            //[--] 称谓
+  private long familyAge;              //[--] 年龄
+  private String familyZcmm;           //[--] 政治面貌
+  private String workplace;            //[--] 何处工作任职
+  private java.sql.Timestamp regTime;  //[--] 登记时间
+  private String familyNote;           //[--] 备注
 
 
   public long getStudentFamilyId() {

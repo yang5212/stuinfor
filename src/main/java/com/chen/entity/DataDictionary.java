@@ -3,15 +3,16 @@ package com.chen.entity;
 import java.io.Serializable;
 
 /**
- *
+ *数据字典信息表
  * @author chen
  */
 public class DataDictionary implements Serializable {
 
-  private Long dataId;
-  private String dataContent;
-  private String dataType;
-  private String dataDesc;
+  private static final long serialVersionUID = 9003620065850055004L;
+  private Long dataId;              //[PK] 编号
+  private String dataContent;       //[--] 数据名称
+  private String dataType;          //[--] 数据类型
+  private String dataDesc;          //[--] 数据描述
 
 
   public Long getDataId() {

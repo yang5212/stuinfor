@@ -1,18 +1,24 @@
-package com.sample;
+package com.chen.entity;
 
+import java.io.Serializable;
+/**
+ * 课程信息表
+ * @author gjx
+ *
+ */
+public class SyllabusInfo implements Serializable {
 
-public class SyllabusInfo {
-
-  private long syllabusId;
-  private String syllabusYi;
-  private String syllabusEr;
-  private String syllabusSan;
-  private String syllabusSi;
-  private String syllabusWu;
-  private String syllabusLiu;
-  private String syllabusQi;
-  private String isUesd;
-  private String syllabusName;
+  private static final long serialVersionUID = 2581894680115377158L;
+  private long syllabusId;         //[PK] 编号
+  private String syllabusYi;       //[--] 星期一
+  private String syllabusEr;       //[--] 星期二
+  private String syllabusSan;      //[--] 星期三
+  private String syllabusSi;       //[--] 星期四
+  private String syllabusWu;       //[--] 星期五
+  private String syllabusLiu;      //[--] 星期六
+  private String syllabusQi;       //[--] 星期天
+  private String isUesd;           //[--] 是否使用
+  private String syllabusName;     //[--] 课程名称表
 
 
   public long getSyllabusId() {

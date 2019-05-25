@@ -4,22 +4,22 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ *学生考勤表
  * @author chen
  */
 public class AttendanceInfo implements Serializable {
 	
   private static final long serialVersionUID = -1477394325704824610L;
-  private Long attendanceId;           // [--] 
-  private Long studentId;              // [--] 
-  private Long staffId;                // [--] 
-  private String attendanceDesc;       // [--] 
-  private String attendanceState;      // [--] 
-  private Timestamp attendanceTime;    // [--] 
-  private String attendanceRemark;     // [--] 
-  private String attendanceXuenian;    // [--] 
-  private String attendanceXueqi;      // [--] 
-  private String attendanceMonth;      // [--] 
+  private Long attendanceId;           // [PK] 编号 
+  private Long studentId;              // [FK] 学生编号
+  private Long staffId;                // [FK] 员工编号
+  private String attendanceDesc;       // [--] 考勤描述 
+  private String attendanceState;      // [--] 考勤状态
+  private Timestamp attendanceTime;    // [--] 考勤时间 
+  private String attendanceRemark;     // [--] 考勤备注
+  private String attendanceXuenian;    // [--] 学年
+  private String attendanceXueqi;      // [--] 学期
+  private String attendanceMonth;      // [--] 月份
 
 
   public Long getAttendanceId() {

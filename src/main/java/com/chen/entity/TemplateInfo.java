@@ -1,12 +1,18 @@
-package com.sample;
+package com.chen.entity;
 
+import java.io.Serializable;
+/**
+ * 模板信息表
+ * @author gjx
+ *
+ */
+public class TemplateInfo implements Serializable{
 
-public class TemplateInfo {
-
-  private long templateId;
-  private String templateTitle;
-  private String templateContent;
-  private String templateType;
+  private static final long serialVersionUID = 7058296676565104982L;
+  private long templateId;          //[PK]编号
+  private String templateTitle;     //[--]标题
+  private String templateContent;   //[--]内容
+  private String templateType;      //[--]类别
 
 
   public long getTemplateId() {

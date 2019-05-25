@@ -10,12 +10,12 @@ import java.sql.Timestamp;
 public class AuditionInfo implements Serializable {
 	
   private static final long serialVersionUID = -3510815426242773291L;
-  private Long auditionId;
-  private Long studentId;
-  private Timestamp auditionTime;
-  private String auditionAddr;
-  private String auditionCourse;
-  private String auditionDesc;
+  private Long auditionId;            // [--]
+  private Long studentId;             // [--]
+  private Timestamp auditionTime;     // [--]
+  private String auditionAddr;        // [--]
+  private String auditionCourse;      // [--]
+  private String auditionDesc;        // [--]
 
 
   public Long getAuditionId() {

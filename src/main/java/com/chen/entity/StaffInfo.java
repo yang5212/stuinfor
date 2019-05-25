@@ -4,31 +4,32 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ *员工信息表
  * @author chen
  */
 public class StaffInfo implements Serializable {
 
-  private Long staffId;
-  private Long roleId;
-  private String staffName;
-  private String staffSex;
-  private Long staffAge;
-  private String staffNativePlace;
-  private String staffIdcard;
-  private Timestamp staffBrithday;
-  private String staffOfficePhone;
-  private String staffMobilePhone;
-  private String staffEamil;
-  private String staffAddr;
-  private String staffQq;
-  private Timestamp staffEntryTime;
-  private String staffEductionLevel;
-  private String staffRemark;
-  private String staffState;
-  private String userNumber;
-  private String userPassowrd;
-
+  private static final long serialVersionUID = -4802511162876923747L;
+  private Long staffId;                 //[PK] 员工编号
+  private Long roleId;                  //[FK] 角色编号
+  private String staffName;             //[--] 员工姓名
+  private String staffSex;              //[--] 员工性别
+  private Long staffAge;                //[--] 员工年龄
+  private String staffNativePlace;      //[--] 籍贯
+  private String staffIdcard;           //[--] 身份证号
+  private Timestamp staffBrithday;      //[--] 出生日期
+  private String staffOfficePhone;      //[--] 办公电话
+  private String staffMobilePhone;      //[--] 移动电话
+  private String staffEamil;            //[--] Email邮箱
+  private String staffAddr;             //[--] 地址
+  private String staffQq;               //[--] QQ号码
+  private Timestamp staffEntryTime;     //[--] 入职时间
+  private String staffEductionLevel;    //[--] 学历
+  private String staffRemark;           //[--] 标注
+  private String staffState;            //[--] 员工类型
+  private String userNumber;            //[--] 用户名
+  private String userPassowrd;          //[--] 密码
+                                               
 
   public Long getStaffId() {
     return staffId;

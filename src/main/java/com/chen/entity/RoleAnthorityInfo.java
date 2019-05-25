@@ -8,9 +8,10 @@ import java.io.Serializable;
  */
 public class RoleAnthorityInfo implements Serializable {
 
-  private Long roleAnthorityId;
-  private Long roleId;
-  private Long anthortyId;
+  private static final long serialVersionUID = 5411015958710169253L;
+  private Long roleAnthorityId;      //[--]
+  private Long roleId;               //[--]
+  private Long anthortyId;           //[--]
 
 
   public Long getRoleAnthorityId() {

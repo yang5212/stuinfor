@@ -4,22 +4,23 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ *学生评教表（月度）
  * @author chen
  */
 public class EvaluationXueqi implements Serializable {
 
-  private Long evaluationId;
-  private Long studentId;
-  private Long disciplineId;
-  private Long staffId;
-  private Long classId;
-  private String evaluationXueqi;
-  private String evaluationMonth;
-  private String evaluationMajor;
-  private String evaluationContent;
-  private Timestamp evaluationTime;
-  private String evaluationNote;
+  private static final long serialVersionUID = 104553832833800300L;
+  private Long evaluationId;            //[PK] 编号
+  private Long studentId;               //[FK] 学生编号
+  private Long disciplineId;            //[FK] 课程编号
+  private Long staffId;                 //[FK] 教师编号
+  private Long classId;                 //[FK] 班级编号
+  private String evaluationXueqi;       //[--] 学期
+  private String evaluationMonth;       //[--] 月份
+  private String evaluationMajor;       //[--] 专业
+  private String evaluationContent;     //[--] 评价内容
+  private Timestamp evaluationTime;     //[--] 评价时间
+  private String evaluationNote;        //[--] 备注
 
 
   public Long getEvaluationId() {

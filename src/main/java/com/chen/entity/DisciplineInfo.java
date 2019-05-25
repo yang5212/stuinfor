@@ -3,19 +3,20 @@ package com.chen.entity;
 import java.io.Serializable;
 
 /**
- *
+ *课程信息表
  * @author chen
  */
 public class DisciplineInfo implements Serializable {
 
-  private Long disciplineId;
-  private String disciplineNo;
-  private String disciplineName;
-  private Double disciplineTuition;
-  private Long disciplineBring;
-  private String disciplineType;
-  private String disciplineDesc;
-  private String disciplineIsuesd;
+  private static final long serialVersionUID = 5314288473615695435L;
+  private Long disciplineId;             //[PK] 编号
+  private String disciplineNo;           //[--] 课程编号
+  private String disciplineName;         //[--] 课程名称
+  private Double disciplineTuition;      //[--] 学分
+  private Long disciplineBring;          //[--] 课时
+  private String disciplineType;         //[--] 课程类型
+  private String disciplineDesc;         //[--] 课程描述
+  private String disciplineIsuesd;       //[--] 课程状态
 
 
   public Long getDisciplineId() {

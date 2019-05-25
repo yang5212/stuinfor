@@ -4,24 +4,25 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ *班级信息表
  * @author chen
  */
 public class ClassInfo implements Serializable {
 
-  private Long classId;
-  private Long syllabusId;
-  private Long classroomId;
-  private Long staffId;
-  private String className;
-  private Long classNumber;
-  private Timestamp classStartTime;
-  private Timestamp classEndTime;
-  private String classIsuesd;
-  private String classState;
-  private String classDesc;
-  private String classMajor;
-
+  private static final long serialVersionUID = 3756456402219337572L;
+  private Long classId;              // [PK] 班级编号
+  private Long syllabusId;           // [FK] 班级课表编号
+  private Long classroomId;          // [FK] 教室编号
+  private Long staffId;              // [FK] 员工编号
+  private String className;          // [--] 班级名
+  private Long classNumber;          // [--] 班级人数
+  private Timestamp classStartTime;  // [--] 开班日期
+  private Timestamp classEndTime;    // [--] 结束日期
+  private String classIsuesd;        // [--] 是否使用
+  private String classState;         // [--] 班级状态
+  private String classDesc;          // [--] 班级描述
+  private String classMajor;         // [--] 专业
+                                         
 
   public Long getClassId() {
     return classId;

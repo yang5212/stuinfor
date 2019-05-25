@@ -4,18 +4,19 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ *短信信息表
  * @author chen
  */
 public class MessafeInfo implements Serializable {
 
-  private Long messafeId;
-  private Long staffId;
-  private String messafeContent;
-  private String messafeMan;
-  private String messafePhone;
-  private Timestamp messafeTime;
-  private String messafeState;
+  private static final long serialVersionUID = -8164143736904937699L;
+  private Long messafeId;             //[PK] 编号
+  private Long staffId;               //[--] 员工编号
+  private String messafeContent;      //[--] 短信内容
+  private String messafeMan;          //[--] 接收人
+  private String messafePhone;        //[--] 电话号码
+  private Timestamp messafeTime;      //[--] 发送时间
+  private String messafeState;        //[--] 短信状态
 
 
   public Long getMessafeId() {

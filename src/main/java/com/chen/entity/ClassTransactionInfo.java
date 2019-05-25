@@ -4,18 +4,19 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ *班级事务信息表
  * @author chen
  */
 public class ClassTransactionInfo implements Serializable {
 
-  private Long classTransactionId;
-  private Long classId;
-  private String classTransactionTitle;
-  private String classTransactionContent;
-  private String classTransactionPerson;
-  private Timestamp classTransactionTime;
-  private String classTransactionRemark;
+  private static final long serialVersionUID = -1493045689044861034L;
+  private Long classTransactionId;           //[PK] 编号
+  private Long classId;                      //[FK] 班级号
+  private String classTransactionTitle;      //[--] 主题
+  private String classTransactionContent;    //[--] 内容
+  private String classTransactionPerson;     //[--] 组织人
+  private Timestamp classTransactionTime;    //[--] 活动日期
+  private String classTransactionRemark;     //[--] 备注信息
 
 
   public Long getClassTransactionId() {

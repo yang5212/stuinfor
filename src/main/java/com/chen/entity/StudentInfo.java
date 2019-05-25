@@ -1,46 +1,52 @@
-package com.sample;
+package com.chen.entity;
 
+import java.io.Serializable;
+/**
+ * 学生信息表
+ * @author gjx
+ *
+ */
+public class StudentInfo implements Serializable {
 
-public class StudentInfo {
-
-  private long studentId;
-  private long staffId;
-  private long classId;
-  private String studentNo;
-  private String studentName;
-  private String studentSex;
-  private String studentName1;
-  private String studentNational;
-  private String studentBirthday;
-  private String studentHealth;
-  private String studentNative;
-  private String studentIndate;
-  private String studentMarital;
-  private String studentAddress;
-  private String studentPost;
-  private String familyTellphone;
-  private String studentTellphone;
-  private String studentQq;
-  private String studentIsleague;
-  private String studentJoinTime;
-  private String studentIdcard;
-  private String studentBeforeSchool;
-  private String studentHobby;
-  private String studentSchool;
-  private String studentPro;
-  private String studentEduSys;
-  private String studentProCity;
-  private String studentType;
-  private String studentIspay;
-  private String studentDesc;
-  private String studentNumber;
-  private String studentPassword;
-  private long studentMark;
-  private String studentState;
-  private String studentHard;
-  private String studentLoan;
-  private String studentMuster;
-  private double studentProject;
+  private static final long serialVersionUID = 2925694206052864326L;
+  private long studentId;               //[PK] 学生编号
+  private long staffId;                 //[FK] 员工编号
+  private long classId;                 //[FK] 班级编号
+  private String studentNo;             //[--] 学号
+  private String studentName;           //[--] 姓名
+  private String studentSex;            //[--] 性别
+  private String studentName1;          //[--] 曾用名
+  private String studentNational;       //[--] 民族
+  private String studentBirthday;       //[--] 出生年月
+  private String studentHealth;         //[--] 健康状况
+  private String studentNative;         //[--] 籍贯
+  private String studentIndate;         //[--] 入学时间
+  private String studentMarital;        //[--] 婚否
+  private String studentAddress;        //[--] 家庭地址
+  private String studentPost;           //[--] 邮编
+  private String familyTellphone;       //[--] 家庭电话
+  private String studentTellphone;      //[--] 本人电话
+  private String studentQq;             //[--] QQ号
+  private String studentIsleague;       //[--] 是否党成员
+  private String studentJoinTime;       //[--] 入党时间
+  private String studentIdcard;         //[--] 身份证号
+  private String studentBeforeSchool;   //[--] 入学前学校
+  private String studentHobby;          //[--] 特长爱好
+  private String studentSchool;         //[--] 所在分院
+  private String studentPro;            //[--] 专业
+  private String studentEduSys;         //[--] 学制
+  private String studentProCity;        //[--] 城市
+  private String studentType;           //[--] 学历类型
+  private String studentIspay;          //[--] 是否缴费
+  private String studentDesc;           //[--] 学生描述
+  private String studentNumber;         //[--] 账号
+  private String studentPassword;       //[--] 密码
+  private long studentMark;             //[--] 是否报到
+  private String studentState;          //[--] 学籍状态
+  private String studentHard;           //[--] 是否困难生
+  private String studentLoan;           //[--] 是否助学贷款
+  private String studentMuster;         //[--] 是否退伍考学
+  private double studentProject;        //[--] 十一工程分
 
 
   public long getStudentId() {

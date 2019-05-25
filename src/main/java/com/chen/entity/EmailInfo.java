@@ -4,19 +4,20 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ *邮件信息表
  * @author chen
  */
 public class EmailInfo implements Serializable {
 
-  private Long emailId;
-  private Long staffId;
-  private String emailTitle;
-  private String emailContent;
-  private Timestamp emailTime;
-  private String emailMan;
-  private String emailAddr;
-  private String emailState;
+  private static final long serialVersionUID = 3993592755069837662L;
+  private Long emailId;              // [PK] 编号
+  private Long staffId;              // [--] 员工编号
+  private String emailTitle;         // [--] 主题
+  private String emailContent;       // [--] 邮件内容
+  private Timestamp emailTime;       // [--] 发送时间
+  private String emailMan;           // [--] 收件人
+  private String emailAddr;          // [--] 邮件地址
+  private String emailState;         // [--] 邮件状态
 
 
   public Long getEmailId() {

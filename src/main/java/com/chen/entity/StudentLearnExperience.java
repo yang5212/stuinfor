@@ -1,16 +1,22 @@
-package com.sample;
+package com.chen.entity;
 
+import java.io.Serializable;
+/**
+ * 学生学习经历表
+ * @author gjx
+ *
+ */
+public class StudentLearnExperience implements Serializable {
 
-public class StudentLearnExperience {
-
-  private long studentLearnId;
-  private long studentId;
-  private long staffId;
-  private String learnAllyears;
-  private String learnSchool;
-  private String learnPosition;
-  private java.sql.Timestamp regTime;
-  private String learnNote;
+  private static final long serialVersionUID = 6915434080841689696L;
+  private long studentLearnId;          //[PK] 编号
+  private long studentId;               //[FK] 学生编号
+  private long staffId;                 //[FK] 员工编号
+  private String learnAllyears;         //[--] 乞讨年月
+  private String learnSchool;           //[--] 学校或机关名称
+  private String learnPosition;         //[--] 学习或任职
+  private java.sql.Timestamp regTime;   //[--] 登记时间
+  private String learnNote;             //[--] 备注
 
 
   public long getStudentLearnId() {

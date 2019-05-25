@@ -1,15 +1,17 @@
-package com.sample;
+package com.chen.entity;
 
+import java.io.Serializable;
 
-public class TrackRecordInfo {
+public class TrackRecordInfo implements Serializable {
 
-  private long trackRecordId;
-  private long studentId;
-  private String trackRecordTitle;
-  private String trackRecordContent;
-  private java.sql.Timestamp trackRecordTime;
-  private long enrollment;
-  private java.sql.Timestamp nextRecordTime;
+  private static final long serialVersionUID = 8421364525527796338L;
+  private long trackRecordId;                  //[--]
+  private long studentId;                      //[--]
+  private String trackRecordTitle;             //[--]
+  private String trackRecordContent;           //[--]
+  private java.sql.Timestamp trackRecordTime;  //[--]
+  private long enrollment;                     //[--]
+  private java.sql.Timestamp nextRecordTime;   //[--]
 
 
   public long getTrackRecordId() {

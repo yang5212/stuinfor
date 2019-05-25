@@ -4,21 +4,22 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ *班主任对学生评价表
  * @author chen
  */
 public class CommunicateInfo implements Serializable {
 
-  private long communicateId;
-  private long studentId;
-  private long staffId;
-  private java.sql.Timestamp communicateTime;
-  private String communicateContent;
-  private String communicateXuenian;
-  private String communicateXueqi;
-  private long leaveCount;
-  private long truancyCount;
-  private String rewardPunish;
+  private static final long serialVersionUID = -7695103075174623720L;
+  private long communicateId;                    //[PK] 编号
+  private long studentId;                        //[FK] 学生编号
+  private long staffId;                          //[FK] 员工编号
+  private java.sql.Timestamp communicateTime;    //[--] 评价时间
+  private String communicateContent;             //[--] 品行评价
+  private String communicateXuenian;             //[--] 学年
+  private String communicateXueqi;               //[--] 学期
+  private long leaveCount;                       //[--] 病事假统计
+  private long truancyCount;                     //[--] 旷课统计
+  private String rewardPunish;                   //[--] 奖惩记载
 
 
   public long getCommunicateId() {

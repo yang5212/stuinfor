@@ -3,17 +3,19 @@ package com.chen.entity;
 import java.io.Serializable;
 
 /**
- *
+ *教室信息表
  * @author chen
  */
 public class ClassroomInfo implements Serializable {
 
-  private Long classroomId;
-  private String classroomName;
-  private Long classroomMax;
-  private String classroomInfo;
-  private String classroomRemark;
-  private String classroomMark;
+  
+  private static final long serialVersionUID = -7180871262002702805L;
+  private Long classroomId;         //[PK] 教室编号
+  private String classroomName;     //[--] 教室名
+  private Long classroomMax;        //[--] 容纳人数
+  private String classroomInfo;     //[--] 设备信息
+  private String classroomRemark;   //[--] 备注信息
+  private String classroomMark;     //[--] 使用状态
 
 
   public Long getClassroomId() {
