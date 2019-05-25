@@ -9,10 +9,10 @@ import java.io.Serializable;
 public class TemplateInfo implements Serializable{
 
   private static final long serialVersionUID = 7058296676565104982L;
-  private long templateId;          //[PK]编号
-  private String templateTitle;     //[--]标题
-  private String templateContent;   //[--]内容
-  private String templateType;      //[--]类别
+  private long templateId;          //[PK] 编号
+  private String templateTitle;     //[--] 标题
+  private String templateContent;   //[--] 内容
+  private String templateType;      //[--] 类别
 
 
   public long getTemplateId() {
